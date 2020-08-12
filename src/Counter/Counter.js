@@ -33,9 +33,9 @@ class Counter extends React.Component {
     render() {
         return (
             <div>
-                <h2>Click counter button</h2>
+                <h4>Click counter button</h4>
                 <button onClick={this.handleClick} className={Style.btn} >counter Click</button> {this.state.counter}
-                <h2>To get user information in sentry click user Button</h2>
+                <h4>To get user information in sentry log click user Button</h4>
                 <button onClick={this.handleUser} className={Style.btn}>user infor</button>
             </div>
             )

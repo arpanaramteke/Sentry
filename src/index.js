@@ -12,13 +12,13 @@ Sentry.init({dsn: "https://5df6f8cea6804f3587d4f9050cc45763@o432126.ingest.sentr
 //     new ApmIntegrations.Tracing(),
 //   ],
 //   tracesSampleRate: 1.0, // Be sure to lower this in production
-  // beforeSend(event, hint) {
-  //   // Check if it is an exception, and if so, show the report dialog
-  //   if (event.exception) {
-  //     Sentry.showReportDialog({ eventId: event.event_id });
-  //   }
-  //   return event;
-  // }
+  beforeSend(event, hint) {
+    // Check if it is an exception, and if so, show the report dialog
+    if (event.exception) {
+      Sentry.showReportDialog({ eventId: event.event_id });
+    }
+    return event;
+  }
 });
 
 ReactDOM.render(

@@ -15,7 +15,7 @@ export default class MyError extends Component {
     const {user} = this.state;
     return (
       <div>
-        <h1> Clck RenderError</h1>
+        <h2>ErrorBoundry called in this Click RenderError</h2>
         <button
           onClick={this.handleClick}
         >
