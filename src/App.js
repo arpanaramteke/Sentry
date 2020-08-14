@@ -12,11 +12,9 @@ class App extends React.Component {
         <ErrorBoundary>
           <MyError />
         </ErrorBoundary>
-        ***********************************
         <ErrorBoundary style={{ display: "flex", justifyContent: "center" }}>
           <MyRenderError />
         </ErrorBoundary>
-        ***********************************
         <ErrorBoundary>
           <Counter />
         </ErrorBoundary>
